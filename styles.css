@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-stretch: 500%;
+}
+
+/* navigation panel */
+
+#navigation{
+    height: 5vw;
+    width: 90vw;
+    background-color: #c0b6a5;
+    color: black;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+#navigation a{
+    margin-right: 2vw;
+    font-size: 1vw;
+    color: black;
+    font-weight: 500;
+}
+
+.page1{
+    background-color: #B0A695;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.page1 .para1{
+    font-size: 0.8vw;
+    
+}
+
+.page1 .para2{
+    font-size: 1.5vw;
+}
+
+.page1 .headpara{
+    width: 100vw;
+    height: 50%;
+    background-color: black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    
+}
+
+.headpara p{
+    font-size: 20vw;
+    color: white;
+    white-space: nowrap;
+    font-stretch: 250%;
+    font-family: headingNowVar;
+}
+
+
+
+
+
