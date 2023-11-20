@@ -115,7 +115,6 @@ html body{
     overflow-y: hidden;
     display: flex;
     align-items: center;
-    
 }
 
 .headpara h1{
@@ -133,6 +132,40 @@ html body{
 }
 
 @media (max-width: 700px) {
+    #navigation{
+        margin-top: 2vh;
+        height: 5vw;
+        width: 90vw;
+    }
+    
+    #navigation a{
+        margin-right: 2vw;
+        margin-left: 2vw;
+        font-size: 2.5vw;
+        color: black;
+        font-weight: 500;
+    }
+    
+    .page1 .para1{
+        font-size: 1.8vw;
+    }
+    
+    .page1 .para2{
+        font-size: 3vw;
+    }
+
+    .page1 .headpara{
+       height: 35%;
+       
+    }
+    
+    .headpara h1{
+        font-size: 75vw;
+        color: white;
+        white-space: nowrap;
+        font-stretch: 270%;
+        font-family: headingNowVar;
+    }
     
 }
 
