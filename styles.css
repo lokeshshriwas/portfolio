@@ -189,6 +189,7 @@ html body{
     height: 100vh;
     width: 100vw;
     background-color: #a09585;
+    overflow: hidden;
 }
 
 .page3 h1{
@@ -274,6 +275,7 @@ html body{
     height: auto;
     width: 100vw;
     background-color: #897d6f;
+    overflow: hidden;
 }
 
 .page4 h1{
@@ -335,15 +337,38 @@ html body{
 }
 
 
+@media (max-width: 1200px) {
 
+    .page1 .para1{
+        font-size: 2vw;
+    }
+    .page1 .para2{
+        font-size: 4vw;
+    }
 
+    #storycontainer{
+        gap: 5vw
+    }
 
+    #storycontainer #storyinfo{
+        height: 35vw;
+    }
 
+    #storyinfo p{
+        height: 15vw;
+    }
 
+    .page3 img{
+        height: 20vw;
+    }
 
-
-
-
+    .page3 h1{
+        font-size: 6vw;
+    }
+    .pg3part1{
+        margin-bottom: 100px;
+    }
+}
 
 
 @media (max-width: 700px) {
@@ -362,11 +387,11 @@ html body{
     }
     
     .page1 .para1{
-        font-size: 1.8vw;
+        font-size: 3vw;
     }
     
     .page1 .para2{
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     .page1 .headpara{
@@ -375,40 +400,46 @@ html body{
     }
     
     .headpara p{
-        font-size: 75vw;
+        font-size: 70vw;
         color: white;
         white-space: nowrap;
         font-stretch: 270%;
     }
 
-   
-    
     #storycontainer{
         flex-direction: column-reverse;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
-        padding: 10vw 0vw;
 
+        padding: 10vw 0vw;
     }
     
     #storyinfo{
         min-height: 30%;
         min-width: 90%;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         overflow-y: hidden;
     }
     
+    #storyinfo p{
+        height: auto;
+    }
     #storycontainer img{
-        height: 39vh;
+        height: 45vh;
         width: 25vw;
         min-height: 45%;
         min-width: 90%;
         
     }
 
+    .page2{
+        box-sizing: border-box;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
     .pg3part2 {
         margin-top: 50px;
         box-sizing: border-box;
@@ -420,8 +451,8 @@ html body{
 
 
     .page2 h1 {
-        padding: 10vw 0vw 0vw 2vw;
-        font-size: 17vw;
+        padding: 5vw 0vw 0vw 3vw;
+        font-size: 12vw;
     }
 
 
@@ -430,7 +461,7 @@ html body{
         font-size: 7vw;
         font-weight: 900;
         font-stretch: 270%;
-        color: #000;
+        color: white;
         padding: 10vw 10vw 10vw 5vw;
     }
 
@@ -442,6 +473,22 @@ html body{
         height: 120px;
         margin-right: 20px;
     }
+
+    .page4 h1{
+        font-size: 10vw;
+    }
+
+    .page4 .card {
+        height: 430px;
+    }
+
+   .card{
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    padding: 20px;
+   }
+
+   .card a{
+    margin-bottom: 10px;
+   }
 }
-
-
