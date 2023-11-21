@@ -1,6 +1,6 @@
-gsap.to(".headpara h1",{
-    transform: "translateX(-50%)",
-    fontWeight: "200",
+gsap.to(".headpara p",{
+    transform: "translateX(-80%)",
+    color: "black",
     scrollTrigger:{
         trigger: ".page1",
         scoller: "body",
@@ -33,6 +33,5 @@ gsap.from("#storycontainer img",{
         scoller: "body",
         start: "top 1",
         scrub: 1,
-        pin: true
     }
 })

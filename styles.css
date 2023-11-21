@@ -108,6 +108,11 @@ html body{
     font-size: 1.5vw;
 }
 
+.headpara::-webkit-scrollbar{
+    display: none;
+}
+
+
 .page1 .headpara{
     width: 100vw;
     height: 60%;
@@ -117,11 +122,11 @@ html body{
     align-items: center;
 }
 
-.headpara h1{
-    font-size: 25vw;
+.headpara p{
+    font-size: 22vw;
     color: white;
     white-space: nowrap;
-    font-stretch: 270%;
+    font-stretch: 200%;
     font-family: headingNowVar;
 }
 
@@ -132,12 +137,16 @@ html body{
     display: flex;
     flex-direction: column;
     align-items: start;
+    overflow: hidden;
 }
 
 .page2 h1{
     padding: 5vw 0vw 0vw 5vw ;
     font-size: 5vw;
     color: white;
+    font-weight: 600;
+    font-stretch: 270%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 #storycontainer{
@@ -167,16 +176,90 @@ html body{
     min-height: 470px;
     min-width: 500px;
     border-radius: 50px;
-    
 }
 
 
 .page3{
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: #806d55;
 }
 
+.page3 h1{
+    font-size: 4.5vw;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.scroller{
+    margin: auto;
+    width: 90%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.pg3part2{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.pg3part2 h1{
+    padding: 3vw 5vw 5vw 0vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pg3part1 h1{
+    padding: 5vw 0vw 3vw 5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.front{
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.back{
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.front img{
+    height: 100px;
+    width: auto;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.back img{
+    height: 100px;
+    width: auto;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+@keyframes scroll {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
 
 
 
@@ -209,14 +292,14 @@ html body{
        
     }
     
-    .headpara h1{
+    .headpara p{
         font-size: 75vw;
         color: white;
         white-space: nowrap;
         font-stretch: 270%;
-        font-family: headingNowVar;
     }
-    
+
+   
     
     #storycontainer{
         flex-direction: column-reverse;
@@ -242,6 +325,40 @@ html body{
         min-height: 45%;
         min-width: 90%;
         
+    }
+
+    .pg3part2 {
+        margin-top: 50px;
+        box-sizing: border-box;
+    }
+    .pg3part1 {
+        margin-top: 50px;
+        box-sizing: border-box;
+    }
+
+
+    .page2 h1 {
+        padding: 10vw 0vw 0vw 2vw;
+        font-size: 17vw;
+    }
+
+
+    .page3 h1 {
+        font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        font-size: 7vw;
+        font-weight: 900;
+        font-stretch: 270%;
+        color: #000;
+        padding: 10vw 10vw 10vw 5vw;
+    }
+
+    .back img{
+        height: 120px;
+        margin-right: 20px;
+    }
+    .front img{
+        height: 120px;
+        margin-right: 20px;
     }
 }
 
