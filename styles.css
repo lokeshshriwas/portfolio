@@ -269,10 +269,66 @@ html body{
 
 
 .page4{
-    height: 100vh;
+    height: auto;
     width: 100vw;
-    background-color: black;
+    background-color: #735f49
 }
+
+
+.cards-container{
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    background-color: black;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap
+}
+
+
+.card{
+    margin: auto;
+    margin-top: 50px;
+    height: 350px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card img{
+    height: 280px;
+    width: 280px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.cardinfo{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardinfo a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
