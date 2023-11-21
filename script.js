@@ -62,3 +62,33 @@ gsap.from(".pg3part2 h1",{
     }
 })
 
+gsap.from(".page2",{
+    backgroundColor: "##b0a695",
+    scrollTrigger:{
+        trigger: ".page2",
+        scroller: "body",
+        strat: "top -90",
+        scrub: 3,
+    }
+})
+
+gsap.from(".page3",{
+    backgroundColor: "##aba190",
+    scrollTrigger:{
+        trigger: ".page3",
+        scroller: "body",
+        strat: "top -90",
+        scrub: 3,
+    }
+})
+
+gsap.from(".page4",{
+    backgroundColor: "#a09585",
+    scrollTrigger:{
+        trigger: ".page4",
+        scroller: "body",
+        strat: "top -90",
+        scrub: 3,
+    }
+})
+
