@@ -1,3 +1,8 @@
+@font-face {
+    font-family: headingNowVar;
+    src: url(Heading-Now-Variable.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -622,15 +627,16 @@ html body{
     }
 
     .page1 .headpara{
-       height: 35%;
+       height: 30%;
        
     }
     
     .headpara p{
-        font-size: 70vw;
+        font-size: 60vw;
         color: white;
         white-space: nowrap;
         font-stretch: 270%;
+        font-family: headingNowVar;
     }
 
     #storycontainer{
