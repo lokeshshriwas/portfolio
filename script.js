@@ -1,18 +1,35 @@
 Shery.mouseFollower();
 Shery.makeMagnet("a, img")
 
-gsap.to(".headpara p",{
-    transform: "translateX(-60%)",
-    color: "black",
-    scrollTrigger:{
-        trigger: ".page1",
-        scoller: "body",
-        start: "top 0",
-        pin: true,
-        scrub: 2,
-    }
-})
+if(window.innerWidth < 700){
+    gsap.to(".headpara #mainslider",{
+        transform: "translateX(-90%)",
+        color: "black",
+        fontWeight: 700,
+        scrollTrigger:{
+            trigger: ".page1",
+            scroller: "body",
+            start: "top 0",
+            pin: true,
+            scrub: 1,
+        }
+    })
+} else{
+    gsap.to(".headpara #mainslider",{
+        transform: "translateX(-65%)",
+        fontWeight: 800,
+        color: "black",
+        scrollTrigger:{
+            trigger: ".page1",
+            scroller: "body",
+            start: "top 0",
+            pin: true,
+            scrub: 1,
+        }
+    })
+}
 
+console.log(window.innerWidth)
 
 gsap.from("#storycontainer #storyinfo p",{
     transform: "translateX(-1000%)",
@@ -20,7 +37,7 @@ gsap.from("#storycontainer #storyinfo p",{
     opacity: 0,
     scrollTrigger:{
         trigger: ".page2",
-        scoller: "body",
+        scroller: "body",
         start: "top 0",
         duration: 3,
         scrub: 1,
@@ -33,7 +50,7 @@ gsap.from("#storycontainer img",{
     scale: 0,
     scrollTrigger:{
         trigger: ".page2",
-        scoller: "body",
+        scroller: "body",
         start: "top 1",
         scrub: 1,
     }
@@ -44,7 +61,7 @@ gsap.from(".pg3part1 h1",{
     color: "black",
     scrollTrigger:{
         trigger: ".page3",
-        scoller: "body",
+        scroller: "body",
         start: "top 1",
         scrub: 1,
         pin: true,
@@ -56,7 +73,7 @@ gsap.from(".pg3part2 h1",{
     color: "black",
     scrollTrigger:{
         trigger: ".page3",
-        scoller: "body",
+        scroller: "body",
         start: "top 1",
         scrub: 1,
     }

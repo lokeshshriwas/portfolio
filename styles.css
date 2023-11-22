@@ -142,6 +142,7 @@ html body{
     overflow-x: scroll;
     overflow-y: hidden;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
