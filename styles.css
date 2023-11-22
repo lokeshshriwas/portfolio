@@ -6,7 +6,7 @@
 
 html body{
     height: 100%;
-    width: 100%;
+    width: 100vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-stretch: 500%;
     overflow-x: hidden;
@@ -481,7 +481,7 @@ html body{
         min-width: 500px;
         border-radius: 50px;
       }
-      
+
     #storycontainer p {
        height: 200px;
       }
