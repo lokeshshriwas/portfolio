@@ -55,7 +55,7 @@ html body{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: anim2 2s cubic-bezier(0.19, 1, 0.22, 1) 2.5s both;
+    animation: anim2 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
 }
 
 #wrapper{
@@ -72,11 +72,22 @@ html body{
     align-items: center;
 }
 
+.elem p{
+    font-size: 20px;
+}
+
+.elem img{
+    height: 100px;
+}
+
 .elem:nth-child(1){
-    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 0.5s both;
+    animation: anim 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.5s both;
 }
 .elem:nth-child(2){
-    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 1.5s both;
+    animation: anim 0.5s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}  
+.elem:nth-child(3){
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 2s both;
 }  
 
 @keyframes anim {
@@ -315,6 +326,12 @@ html body{
     padding: 15px;
 }
 
+.card:hover{
+    box-shadow: 2px 2px 30px #443b2f;
+    transition: all ease-in 0.3s;
+    transform: scale(1.01);
+}
+
 .card img{
     height: 280px;
     width: auto;
@@ -371,6 +388,8 @@ html body{
     flex-direction: column;
     height: 100%;
     width: 35%;
+    margin-left: 8vw;
+    margin-top: 5vw;
 }
 
 .contact-title{
@@ -379,7 +398,7 @@ html body{
 }
 
 .left h2{
-    font-size: 50px;
+    font-size: 2.5vw;
     font-weight: 600;
     
 }
@@ -456,8 +475,23 @@ html body{
         height: 15vw;
     }
 
+    #storycontainer img {
+        height: 30vh;
+        min-height: 470px;
+        min-width: 500px;
+        border-radius: 50px;
+      }
+      
+    #storycontainer p {
+       height: 200px;
+      }
+
+    .page3{
+        margin-top: 10vw;
+    }
+
     .page3 img{
-        height: 20vw;
+        height: 10vw;
     }
 
     .page3 h1{
@@ -466,10 +500,105 @@ html body{
     .pg3part1{
         margin-bottom: 100px;
     }
+
+    .page5{
+        display: flex;
+        background-color: #aba190;
+    }
+    
+    #pg5part1{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-top: 5vw;
+        background-color: #aba190;
+    }
+    
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        height: 50vh;
+        width: 100%;
+        margin-top: 8vw;
+    }
+    
+    .contact-title {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 5px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .left h2{
+        font-size: 30px;
+        font-weight: 600;
+       
+        
+    }
+    
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 15vw;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    .links{
+        display: flex;
+        gap: 10px;
+        height: 40px;
+        align-items: center;
+    }
+    
+    .links h4{
+        color: black;
+    }
+    
+    .links img{
+        height: 30px;
+    }
+    
+    .right-part {
+        height: 45%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right-part img{
+        height: 60vw;
+    }
+    
+    .pg5part2{
+        background-color: black;
+        color: white;
+        height: 15vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .pg5part2 img{
+        margin-top: 10px;
+        height: 30px;
+    }
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     #navigation{
         margin-top: 2vh;
         height: 5vw;
@@ -523,11 +652,12 @@ html body{
     }
     
     #storyinfo p{
-        height: auto;
+        height: 200px;
     }
+
     #storycontainer img{
         height: 45vh;
-        width: 25vw;
+        width: auto;
         min-height: 45%;
         min-width: 90%;
         
@@ -537,6 +667,10 @@ html body{
         box-sizing: border-box;
         padding: 10px;
         padding-bottom: 20px;
+    }
+
+    .page3{
+        padding-top: 10vw;
     }
     .pg3part2 {
         margin-top: 50px;
@@ -560,15 +694,15 @@ html body{
         font-weight: 900;
         font-stretch: 270%;
         color: white;
-        padding: 10vw 10vw 10vw 5vw;
+        padding: 3vw 10vw 10vw 5vw;
     }
 
     .back img{
-        height: 120px;
+        height: 30vw;
         margin-right: 20px;
     }
     .front img{
-        height: 120px;
+        height: 30vw;
         margin-right: 20px;
     }
 
@@ -591,7 +725,6 @@ html body{
 
 
    .page5{
-    /* padding: 2vw 2vw; */
     display: flex;
     background-color: #aba190;
 }
@@ -617,9 +750,14 @@ html body{
     margin-top: 8vw;
 }
 
-.contact-title{
+.contact-title {
+    width: 100%;
     height: 100px;
     margin-bottom: 5px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .left h2{

@@ -2,7 +2,7 @@ Shery.mouseFollower();
 Shery.makeMagnet("a, img")
 
 gsap.to(".headpara p",{
-    transform: "translateX(-92%)",
+    transform: "translateX(-80%)",
     color: "black",
     scrollTrigger:{
         trigger: ".page1",
@@ -67,7 +67,7 @@ gsap.from(".page2",{
     scrollTrigger:{
         trigger: ".page2",
         scroller: "body",
-        strat: "top -90",
+        strat: "top -50",
         scrub: 3,
     }
 })
@@ -77,7 +77,7 @@ gsap.from(".page3",{
     scrollTrigger:{
         trigger: ".page3",
         scroller: "body",
-        strat: "top -90",
+        strat: "top -50",
         scrub: 3,
     }
 })
@@ -87,8 +87,32 @@ gsap.from(".page4",{
     scrollTrigger:{
         trigger: ".page4",
         scroller: "body",
-        strat: "top -90",
+        strat: "top -50",
         scrub: 3,
     }
 })
 
+gsap.from(".page5",{
+    backgroundColor: "#897d6f",
+    scrollTrigger:{
+        trigger: ".page5",
+        scroller: "body",
+        strat: "top -50",
+        end: "top -99",
+        scrub: 3,
+    }
+})
+
+gsap.from(".card",{
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger:{
+        trigger: (".page4"),
+        scroller: "body",
+        pin: true,
+        scrub: 2,
+        start: "top -50",
+        end : "top 90"
+    }
+})
