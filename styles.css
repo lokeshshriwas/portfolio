@@ -741,12 +741,16 @@ html body{
     }
 
     .page4 .card {
-        height: 430px;
+        height: auto;
     }
+
+ 
+  
 
    .card{
     box-sizing: border-box;
     padding: 20px;
+    height: auto;
    }
 
    .card a{
