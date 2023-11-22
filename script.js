@@ -24,7 +24,7 @@ gsap.from("#storycontainer #storyinfo p",{
         start: "top 0",
         duration: 3,
         scrub: 1,
-        pin: true
+        pin: true,
     }
 })
 
@@ -63,7 +63,7 @@ gsap.from(".pg3part2 h1",{
 })
 
 gsap.from(".page2",{
-    backgroundColor: "##b0a695",
+    backgroundColor: "#b0a695",
     scrollTrigger:{
         trigger: ".page2",
         scroller: "body",
@@ -73,7 +73,7 @@ gsap.from(".page2",{
 })
 
 gsap.from(".page3",{
-    backgroundColor: "##aba190",
+    backgroundColor: "#aba190",
     scrollTrigger:{
         trigger: ".page3",
         scroller: "body",

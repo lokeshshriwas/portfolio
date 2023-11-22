@@ -10,6 +10,7 @@ html body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-stretch: 500%;
     overflow-x: hidden;
+    background-color: #aba190;
 }
 
 /* navigation panel */
@@ -276,6 +277,7 @@ html body{
     width: 100vw;
     background-color: #897d6f;
     overflow: hidden;
+    padding-bottom: 5vw;
 }
 
 .page4 h1{
@@ -334,6 +336,102 @@ html body{
 .cardinfo a{
     color: white;
     padding: 10px 0px;
+}
+
+
+/* page 5 */
+
+.page5{
+    height: auto;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    padding: 0vw 8vw 0vw 8vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aba190;
+}
+
+#pg5part1{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 5vw;
+    background-color: #aba190;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 35%;
+}
+
+.contact-title{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.left h2{
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.links{
+    display: flex;
+    gap: 10px;
+    height: 70px;
+    align-items: center;
+}
+
+.links h4{
+    color: black;
+}
+
+.links img{
+    height: 50px;
+}
+
+.right-part {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.right-part img{
+    height: 700px;
+}
+
+.pg5part2{
+    background-color: black;
+    color: white;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pg5part2 img{
+    margin-top: 10px;
+    height: 30px;
 }
 
 
@@ -491,4 +589,6 @@ html body{
    .card a{
     margin-bottom: 10px;
    }
+
+   
 }
