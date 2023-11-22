@@ -29,7 +29,6 @@ if(window.innerWidth < 700){
     })
 }
 
-console.log(window.innerWidth)
 
 gsap.from("#storycontainer #storyinfo p",{
     transform: "translateX(-1000%)",
