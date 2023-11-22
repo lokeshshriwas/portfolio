@@ -3,7 +3,7 @@ Shery.makeMagnet("a, img")
 
 if(window.innerWidth < 700){
     gsap.to(".headpara #mainslider",{
-        transform: "translateX(-90%)",
+        transform: "translateX(-480vw)",
         color: "black",
         fontWeight: 700,
         scrollTrigger:{
@@ -16,7 +16,7 @@ if(window.innerWidth < 700){
     })
 } else{
     gsap.to(".headpara #mainslider",{
-        transform: "translateX(-65%)",
+        transform: "translateX(-80vw)",
         fontWeight: 800,
         color: "black",
         scrollTrigger:{
