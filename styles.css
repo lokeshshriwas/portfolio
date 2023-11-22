@@ -39,7 +39,7 @@ html body{
 
 #navigation a{
     margin-right: 2vw;
-    font-size: 1vw;
+    font-size: 1.3vw;
     color: black;
     font-weight: 500;
 }
@@ -48,6 +48,7 @@ html body{
     height: 100px;
     width: 100px;
 }
+
 
 /* loader section */
 
@@ -162,6 +163,10 @@ html body{
     flex-direction: column;
     align-items: start;
     overflow: hidden;
+}
+
+.page2 p{
+    font-size: 22px;
 }
 
 .page2 h1{
@@ -339,17 +344,24 @@ html body{
 }
 
 .card img{
-    height: 280px;
+    height: 240px;
     width: auto;
     max-width: 350px;
     padding: 10px;
     border-radius: 30px;
     object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card p{
+    height: 100%;
+    width: 90%;
+    text-align: center;
 }
 
 .cardinfo{
-    height: 100px;
-    width: 80%;
+    height: 200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -605,6 +617,12 @@ html body{
 
 
 @media (max-width: 650px) {
+
+
+    .logo img{
+        height: 110px;
+ 
+    }
     #navigation{
         margin-top: 2vh;
         height: 5vw;
@@ -614,9 +632,9 @@ html body{
     #navigation a{
         margin-right: 2vw;
         margin-left: 2vw;
-        font-size: 2.5vw;
+        font-size: 3.4vw;
         color: black;
-        font-weight: 500;
+        font-weight: 600;
     }
     
     .page1 .para1{
@@ -650,7 +668,7 @@ html body{
     }
     
     #storyinfo{
-        min-height: 30%;
+        min-height: 70vh;
         min-width: 90%;
         display: flex;
         justify-content: start;
@@ -659,7 +677,7 @@ html body{
     }
     
     #storyinfo p{
-        height: 200px;
+        height: 100px;
     }
 
     #storycontainer img{
@@ -674,6 +692,11 @@ html body{
         box-sizing: border-box;
         padding: 10px;
         padding-bottom: 20px;
+        height: fit-content;
+    }
+
+    .page2 p{
+        font-size: 15px;
     }
 
     .page3{
