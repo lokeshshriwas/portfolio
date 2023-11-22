@@ -2,7 +2,7 @@ Shery.mouseFollower();
 Shery.makeMagnet("a, img")
 
 gsap.to(".headpara p",{
-    transform: "translateX(-80%)",
+    transform: "translateX(-60%)",
     color: "black",
     scrollTrigger:{
         trigger: ".page1",
