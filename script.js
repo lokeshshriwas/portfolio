@@ -98,10 +98,19 @@ gsap.from(".page3",{
     }
 })
 
-gsap.from(".page4",{
+gsap.from(".page4-1",{
     backgroundColor: "#a09585",
     scrollTrigger:{
-        trigger: ".page4",
+        trigger: ".page4-1",
+        scroller: "body",
+        strat: "top -50",
+        scrub: 3,
+    }
+})
+gsap.from(".page4-2",{
+    backgroundColor: "#a09585",
+    scrollTrigger:{
+        trigger: ".page4-2",
         scroller: "body",
         strat: "top -50",
         scrub: 3,
@@ -124,7 +133,7 @@ gsap.from(".card",{
     duration: 2,
     opacity: 0,
     scrollTrigger:{
-        trigger: (".page4"),
+        trigger: (".page4-1"),
         scroller: "body",
         pin: true,
         scrub: 2,
